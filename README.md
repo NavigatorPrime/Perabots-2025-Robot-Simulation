@@ -94,7 +94,8 @@ Team Name: **InfraWarriors**
 
 # 📸 Screenshots
 
-<img width="768" height="432" alt="pera bots" src="https://github.com/user-attachments/assets/8a5220d1-b384-4abc-a0ee-c83f4f03d73d" />
+<img width="1222" height="856" alt="Robot Image" src="https://github.com/user-attachments/assets/9b340b28-13a1-4584-9f57-2c69bab702e1" />
+
 
 
 # 🧠 Challenges Faced
