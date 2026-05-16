@@ -97,13 +97,6 @@ Team Name: **InfraWarriors**
 
 "D:\Other Projects\Perabots\Pera\Robot Simulation\WORLD\worlds\.pera bots.jpg"
 
-Example:
-
-```markdown
-![Robot Simulation](images/simulation.png)
-```
-
----
 
 # 🧠 Challenges Faced
 
