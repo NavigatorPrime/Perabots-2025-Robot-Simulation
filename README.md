@@ -1,4 +1,6 @@
-<img width="768" height="432" alt="pera bots" src="https://github.com/user-attachments/assets/8a5220d1-b384-4abc-a0ee-c83f4f03d73d" /># Perabots-2025-Robot-Simulation
+<img width="768" height="432" alt="pera bots" src="https://github.com/user-attachments/assets/8a5220d1-b384-4abc-a0ee-c83f4f03d73d" />
+
+# Perabots-2025-Robot-Simulation
 Autonomous simulation-based path-finding robot developed by Team InfraWarriors for the PeraBots 25 competition.
 
 
