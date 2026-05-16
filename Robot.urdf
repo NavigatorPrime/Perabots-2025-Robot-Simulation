@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<robot name="E:/Robot.urdf" xmlns:xacro="http://ros.org/wiki/xacro">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.015"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.05" length="0.015"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rotational_motor_2" type="continuous">
+    <parent link="base_link"/>
+    <child link="solid"/>
+    <axis xyz="0 0.000797 -1"/>
+    <limit effort="10" velocity="10"/>
+    <origin xyz="0 0.07 0" rpy="1.57 -0.435778 0"/>
+  </joint>
+  <link name="solid">
+    <visual>
+      <origin xyz="-0.000006 0.000001 0.02" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.025" length="0.005"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.000006 0.000001 0.02" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.025" length="0.005"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rotational_motor_1" type="continuous">
+    <parent link="base_link"/>
+    <child link="solid(1)"/>
+    <axis xyz="0.000001 0.000797 -1"/>
+    <limit effort="10" velocity="10"/>
+    <origin xyz="-0.000006 -0.069999 0.02" rpy="-1.571594 0.913905 3.141592"/>
+  </joint>
+  <link name="solid(1)">
+    <visual>
+      <origin xyz="-0.000007 -0.000003 -0.02" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.025" length="0.005"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.000007 -0.000003 -0.02" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.025" length="0.005"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="lidar">
+    <visual>
+      <origin xyz="-0.000007 -0.000003 -0.02" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.005 0.03 0.015"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.000007 -0.000003 -0.02" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.005 0.03 0.015"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="base_link_lidar_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="lidar"/>
+    <origin xyz="0.049993 -0.000003 -0.02005" rpy="0 0 0"/>
+  </joint>
+  <link name="global">
+  </link>
+  <joint name="base_link_global_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="global"/>
+    <origin xyz="0 0 0.015" rpy="0 0 0"/>
+  </joint>
+  <link name="solid_0">
+  </link>
+  <joint name="global_solid_0_joint" type="fixed">
+    <parent link="global"/>
+    <child link="solid_0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+</robot>
